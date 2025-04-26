@@ -1,7 +1,8 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Navbar from './components/Navbar'; // adjust path if needed
-import LandingPage from './pages/LandingPage';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar'; // Add your Navbar here
+import Footer from './components/Footer'; // Add Footer if you have it
+import HomePage from './pages/HomePage'; // Make sure this is correct
 import LoginPage from './pages/LoginPage';
 import RegisterStudentPage from './pages/RegisterStudentPage';
 import ContactPage from './pages/ContactPage';
@@ -14,9 +15,9 @@ import StudentDashboard from './pages/StudentDashboard';
 function AppRoutes() {
   return (
     <Router>
-
+      <Navbar />
       <Routes>
-        <Route path="/" element={<LandingPage />} />
+        <Route path="/" element={<HomePage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/register-student" element={<RegisterStudentPage />} />
         <Route path="/contact" element={<ContactPage />} />
@@ -26,8 +27,7 @@ function AppRoutes() {
         <Route path="/instructor-dashboard" element={<InstructorDashboard />} />
         <Route path="/student-dashboard" element={<StudentDashboard />} />
       </Routes>
-      <footer />
-
+      <Footer />
     </Router>
   );
 }
