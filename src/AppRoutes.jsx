@@ -11,6 +11,7 @@ import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
 import AdminDashboard from './pages/AdminDashboard';
 import InstructorDashboard from './pages/InstructorDashboard';
 import StudentDashboard from './pages/StudentDashboard';
+import InstructorGradingPage from './pages/GradingPage';
 
 function AppRoutes() {
   return (
@@ -26,6 +27,8 @@ function AppRoutes() {
         <Route path="/admin-dashboard" element={<AdminDashboard />} />
         <Route path="/instructor-dashboard" element={<InstructorDashboard />} />
         <Route path="/student-dashboard" element={<StudentDashboard />} />
+        {/* <Route path="/instructor" element={<StudentDashboard />} /> */}
+
       </Routes>
       <Footer />
     </Router>

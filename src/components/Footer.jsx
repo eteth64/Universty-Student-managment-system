@@ -22,13 +22,13 @@ function Footer() {
   ];
 
   return (
-    <footer className="bg-blue-700 text-white py-10 mt-50">
-      <div className="container mx-auto px-4 py-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+    <footer className="py-10 text-white bg-blue-700 mt-50">
+      <div className="container px-4 py-4 mx-auto">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
 
           {/* University Info */}
           <div>
-            <h3 className="text-md font-bold mb-2">UniversitySys</h3>
+            <h3 className="mb-2 font-bold text-md">UniversitySys</h3>
             <p className="text-xs opacity-90">
               Empowering education through innovation.
             </p>
@@ -36,7 +36,7 @@ function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-sm font-semibold mb-2">Quick Links</h4>
+            <h4 className="mb-2 text-sm font-semibold">Quick Links</h4>
             <ul className="space-y-1 text-xs">
               <li><Link to="/about" className="hover:text-gray-300">About Us</Link></li>
               <li><Link to="/contact" className="hover:text-gray-300">Contact</Link></li>
@@ -47,18 +47,18 @@ function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h4 className="text-sm font-semibold mb-2">Contact Us</h4>
+            <h4 className="mb-2 text-sm font-semibold">Contact Us</h4>
             <ul className="space-y-1 text-xs opacity-90">
               <li><a href="mailto:support@universitysys.edu" className="hover:text-gray-300">support@universitysys.edu</a></li>
               <li><a href="tel:5551234567" className="hover:text-gray-300">(555) 123-4567</a></li>
-              <li>123 Education Blvd</li>
-              <li>Academic City, EC 45678</li>
+              <li>ethiopia</li>
+              <li>Academic City, AA 1000</li>
             </ul>
           </div>
 
           {/* Social Media */}
           <div>
-            <h4 className="text-sm font-semibold mb-2">Connect</h4>
+            <h4 className="mb-2 text-sm font-semibold">Connect</h4>
             <div className="flex space-x-2">
               {socialMedia.map((social) => (
                 <a
@@ -79,8 +79,8 @@ function Footer() {
         </div>
 
         {/* Copyright */}
-        <div className="border-t border-blue-600 mt-3 pt-3 text-center text-xs">
-          <p>© {currentYear} UniversitySys. All rights reserved.</p>
+        <div className="pt-3 mt-3 text-xs text-center border-t border-blue-600">
+          <p>© {currentYear} UniversityMS. All rights reserved.</p>
         </div>
       </div>
     </footer>
